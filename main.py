@@ -98,7 +98,7 @@ def rows_creator(link) -> list:
     return rows
 
 def main():
-    """Hlavní funkce, která volá ostatní, a tvoří tabulku"""
+    """Hlavní funkce, která volá ostatní a tvoří tabulku"""
     try:
         link = sys.argv[1]
         filename = sys.argv[2]
