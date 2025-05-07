@@ -81,7 +81,7 @@ def fetch_parties(link) -> list:
         parties.append(party.text)
     return parties
 
-def rows_creator(link):
+def rows_creator(link) -> list:
     """vrací list - obsah tabulky"""
     rows = []
     fetch_voters(link)
