@@ -82,6 +82,7 @@ def fetch_parties(link) -> list:
     return parties
 
 def rows_creator(link):
+    """vrací list - obsah tabulky"""
     rows = []
     fetch_voters(link)
     obce = fetch_towns(link)
