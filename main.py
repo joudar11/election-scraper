@@ -64,7 +64,7 @@ def fetch_votes(link) -> list:
     links = fetch_link(link)
     votes = []
     for url in links:
-        votes_chnapac = fetch_soup(url).find_all("td", "cislo", headers=["t1sa2 t1sb3"])
+        votes_chnapac = fetch_soup(url).find_all("td", "cislo", headers=["t1sa2 t1sb3", "t2sa2 t2sb3"])
         hlasy = []
         for vote in votes_chnapac:
             hlasy.append(vote.text)
